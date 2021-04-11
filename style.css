@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(to bottom, #003366 0%, #0099cc 100%);
+}
+span {
+  font-size: 30px;
+}
+#camera,
+#result {
+  border: 2px solid black;
+  width: 350px;
+  height: 300px;
+}
+#result_emotion_name,
+#result_emotion_name2 {
+  color: rgb(255, 255, 255);
+}
+.emotion_name {
+  font-size: 40px;
+}
+.emoji {
+  font-size: 48px;
+}
+label {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.para {
+  color: white;
+}
+#predictions {
+  color: white;
+  font-size: 20px;
+}
+#views {
+  color: white;
+  font-size: 20px;
+}
+.heading{
+ background-color:rgb(170, 0, 162)
+
+}

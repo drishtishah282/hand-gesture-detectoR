@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>hand gesture detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <center>
+        <b><h3 class="heading" style="font-size: 30px "></b>
+          HAND GESTURE DETECTOR
+          <br />
+          <span>&#128074;</span>
+          <span>&#128073; </span>
+          <span>&#128079;</span>
+          <br />
+        </h3>
+        <br />
+        <br />
+        <br />
+        <br />
+        <b>
+          <p style="font-size: 22px" class="para">
+            Take your selfie to generate hand gesture
+            <br>
+            <span>&#9996;</span>
+            <span>&#128076; </span>
+            <span>&#128077;</span>
+          </p>
+        </b>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label id="views">Webcam View - </label>
+          <div id="camera"></div>
+          <br />
+          <button onclick="take_snapshot();" class="btn btn-warning" id="views">
+            Capture Image
+          </button>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label id="predictions">Prediction 1 - </label>
+          <p class="emotion_name" id="result_emotion_name"></p>
+          <p class="emoji" id="update_emoji"></p>
+
+          <label  id="predictions">Prediction 2 - </label>
+          <p class="emotion_name" id="result_emotion_name2"></p>
+          <p class="emoji" id="update_emoji2"></p>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Snapshot - </label>
+          <div id="result"></div>
+          <br />
+          <button onclick="check();" class="btn btn-success" id="views">
+            Predict Emotion
+          </button>
+        </div>
+      </center>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+https://teachablemachine.withgoogle.com/models/Ss_C8Fz7F/
